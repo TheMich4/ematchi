@@ -1,10 +1,12 @@
-<script>
+<script lang="ts">
 	import Square from './square.svelte';
+
+	export let grid: string[];
 </script>
 
 <div class="grid">
-	{#each Array(16) as _, i}
-		<Square />
+	{#each grid as emoji}
+		<Square {emoji} />
 	{/each}
 </div>
 
