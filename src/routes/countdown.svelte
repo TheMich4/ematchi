@@ -43,6 +43,8 @@
 		font-size: 8em;
 		width: 1em;
 		height: 1em;
+		background-color: transparent;
+		border: none;
 	}
 
 	svg {
