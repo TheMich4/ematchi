@@ -49,8 +49,16 @@
 
 			<div class="flex flex-row gap-2">
 				{#if state === 'paused'}
-					<Button>resume</Button>
-					<Button>quit</Button>
+					<Button
+						on:click={() => {
+							game.resume();
+						}}>resume</Button
+					>
+					<Button
+						on:click={() => {
+							state = 'waiting';
+						}}>quit</Button
+					>
 				{:else}
 					{#each levels as level}
 						<Button
