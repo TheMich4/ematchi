@@ -18,6 +18,7 @@
 	let playing: boolean = false;
 
 	export function start(level: Level) {
+		found = [];
 		size = level.size;
 		grid = createGrid(level);
 		remaining = duration = level.duration;
