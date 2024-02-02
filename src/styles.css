@@ -1,5 +1,9 @@
 @import '@fontsource/grandstander';
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
 	position: relative;
 	box-sizing: border-box;
