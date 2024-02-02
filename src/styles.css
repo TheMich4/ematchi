@@ -15,6 +15,7 @@ body {
 	width: 100%;
 	margin: 0;
 	font-family:
+		Grandstander,
 		system-ui,
 		-apple-system,
 		BlinkMacSystemFont,
@@ -26,8 +27,6 @@ body {
 		'Open Sans',
 		'Helvetica Neue',
 		sans-serif;
-}
 
-h1 {
-	font-family: Grandstander;
+	@apply bg-zinc-950 text-zinc-100;
 }

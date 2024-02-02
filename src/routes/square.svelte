@@ -8,21 +8,23 @@
 	export let group: 'a' | 'b';
 </script>
 
-<div class="square" class:flipped={selected || found}>
-	<button on:click />
+<div class="square flex justify-center items-center" class:flipped={selected || found}>
+	<button on:click class="absolute size-full border-0 rounded-lg bg-zinc-500" />
 
-	<div class="background" />
+	<div class="background bg-zinc-900 border-4 border-purple-700 size-full absolute rounded-lg" />
 
 	{#if !found}
-		<img alt={emoji} src={getTwemojiUrl(emoji)} out:send={{ key: `${emoji}:${group}` }} />
+		<img
+			alt={emoji}
+			src={getTwemojiUrl(emoji)}
+			out:send={{ key: `${emoji}:${group}` }}
+			class="size-12 pointer-events-none"
+		/>
 	{/if}
 </div>
 
 <style>
 	.square {
-		display: flex;
-		justify-content: center;
-		align-items: center;
 		transform-style: preserve-3d;
 		transition: transform 0.4s;
 	}
@@ -32,31 +34,16 @@
 	}
 
 	button {
-		position: absolute;
-		width: 100%;
-		height: 100%;
 		backface-visibility: hidden;
-		background-color: #eee;
-		border: 0;
-		border-radius: 1em;
 		font-size: inherit;
 	}
 
 	.background {
-		background-color: white;
-		border: 0.5em solid #eee;
 		transform: rotateY(180deg);
 		backface-visibility: hidden;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		border-radius: 1em;
 	}
 
 	img {
-		width: 6em;
-		height: 6em;
-		pointer-events: none;
 		transform: rotateY(180deg);
 		backface-visibility: hidden;
 	}
