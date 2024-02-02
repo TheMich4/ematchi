@@ -56,7 +56,7 @@
 
 <div class="game">
 	<div class="info">
-		<Countdown {remaining} duration={level.duration} />
+		<Countdown {remaining} duration={level.duration} on:click={() => {}} />
 	</div>
 
 	<div class="grid-container">
@@ -64,6 +64,9 @@
 			{grid}
 			on:found={(e) => {
 				found = [...found, e.detail.emoji];
+
+				if (found.length === (size * size) / 2) {
+				}
 			}}
 			{found}
 		/>

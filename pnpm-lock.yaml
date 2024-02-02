@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+dependencies:
+  '@fontsource/grandstander':
+    specifier: ^5.0.18
+    version: 5.0.18
+
 devDependencies:
   '@sveltejs/adapter-auto':
     specifier: ^3.0.0
@@ -252,6 +257,10 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/grandstander@5.0.18:
+    resolution: {integrity: sha512-hpSqYorc43pEXglb6zY1Lc2P8gJOw029FxHqccKSKKCNogZ+Sk4NFudfJ5ZRW5zOdD5iDnPx+rb5rIhpvlsCnA==}
+    dev: false
 
   /@jridgewell/gen-mapping@0.3.3:
     resolution: {integrity: sha512-HLhSWOLRi875zjjMG/r+Nv0oCW8umGb0BgEhyX3dDX3egwZtB8PqLnjz3yedt8R5StBrzcg4aBpnh8UA9D1BoQ==}
