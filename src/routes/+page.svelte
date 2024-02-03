@@ -75,7 +75,7 @@
 
 {#if state === 'won'}
 	<div
-		class="fixed size-full left-[50%] top-[30%] pointer-events-none"
+		class="!fixed !h-full !w-full left-[50%] top-[30%] pointer-events-none"
 		use:confetti={{ stageWidth: innerWidth, stageHeight: innerHeight }}
 	/>
 {/if}
