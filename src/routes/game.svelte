@@ -75,7 +75,7 @@
 		{#if playing}
 			<Countdown
 				{remaining}
-				duration={level.duration}
+				{duration}
 				on:click={() => {
 					playing = false;
 					dispatch('pause');
