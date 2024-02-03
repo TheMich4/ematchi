@@ -18,7 +18,7 @@
 			alt={emoji}
 			src={getTwemojiUrl(emoji)}
 			out:send={{ key: `${emoji}:${group}` }}
-			class="size-12 max-width-[80%] pointer-events-none"
+			class="size-7 sm:size-10 md:size-12 max-width-[80%] pointer-events-none"
 		/>
 	{/if}
 </div>
