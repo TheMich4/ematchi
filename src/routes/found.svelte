@@ -25,5 +25,8 @@
 		position: absolute;
 		width: 4em;
 		height: 4em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 </style>

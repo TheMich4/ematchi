@@ -70,8 +70,8 @@
 	}
 </script>
 
-<div class="game" style="--size: {size}">
-	<div class="info">
+<div class="game flex flex-col justify-center items-center h-full gap-4" style="--size: {size}">
+	<div class="h-fit w-[80em]">
 		{#if playing}
 			<Countdown
 				{remaining}
@@ -84,7 +84,7 @@
 		{/if}
 	</div>
 
-	<div class="grid-container">
+	<div class="w-[80em] h-[80em]">
 		<Grid
 			{grid}
 			on:found={(e) => {
@@ -98,28 +98,13 @@
 		/>
 	</div>
 
-	<div class="info">
+	<div class="h-fit w-[80em]">
 		<Found {found} />
 	</div>
 </div>
 
 <style>
 	.game {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		height: 100%;
 		font-size: min(1vmin, 0.5rem);
-	}
-
-	.info {
-		width: 80em;
-		height: 10em;
-	}
-
-	.grid-container {
-		width: 80em;
-		height: 80em;
 	}
 </style>

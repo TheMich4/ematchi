@@ -4,7 +4,7 @@
 </script>
 
 <div class="flex items-center gap-4">
-	<button on:click class="size-16 bg-transparent border-0 text-zinc-500">
+	<button on:click class="size-12 sm:size-14 md:size-16 bg-transparent border-0 text-zinc-500">
 		<svg
 			xmlns="http://www.w3.org/2000/svg"
 			viewBox="0 0 24 24"
